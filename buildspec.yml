@@ -25,7 +25,7 @@ phases:
       #- cd ..
       - pwd
       - docker build -t newspring .
-      - sudo docker tag thm:latest public.ecr.aws/p2g3u3g4/newspring:latest
+      - sudo docker tag newspring:latest public.ecr.aws/p2g3u3g4/newspring:latest
    ###- aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/p2g3u3g4
       #- echo Build started on `date`
       #- echo building the Jar file
