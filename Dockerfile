@@ -1,4 +1,6 @@
-FROM eclipse-temurin:17-jdk-alpine
+FROM openjdk:17-alpine
+ARG DEBIAN_FRONTEND=noninteractive
+#FROM eclipse-temurin:17-jdk-alpine
 RUN apk add curl
 VOLUME /tmp
 EXPOSE 8080
